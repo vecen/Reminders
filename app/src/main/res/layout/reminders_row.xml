@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@color/dark_grey"
+
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <view
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            class="android.view.View"
+            android:id="@+id/row_tab"
+            android:background="@color/green">
+
+        </view>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+
+            android:text="Reminder Text"
+            android:id="@+id/row_txt"
+            android:textSize="18sp"
+            android:background="@color/white"/>
+    </LinearLayout>
+    <view
+        class="android.view.View"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        ></view>
+    <view
+        class = "android.view.View"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#333"
+        />
+</LinearLayout>
